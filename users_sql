@@ -1,0 +1,7 @@
+START TRANSACTION;
+INSERT INTO `logins` (`id`, `name`, `mobile`, `email`, `password`, `role`, `branch_id`, `otp`, `created_at`, `update_at`, `is_varified`, `is_activated`, `staff_id`, `is_deleted`) VALUES
+(1, 'secure hub services ', '9537128259', 'densetek.jignesh@gmail.com', 'V2M3TFBLVzF1ODZKaDlXVGhUeUpqUT09', 'Admin', 0, 0, '2021-12-22 12:58:14', '2021-12-25 17:38:51', 0, 0, 0, 0),
+(2, 'securehubservices', '9537128259', 'staff@mail.com', 'V2M3TFBLVzF1ODZKaDlXVGhUeUpqUT09', 'Staff', 0, 0, '2021-12-22 12:58:14', '2021-12-22 08:27:35', 0, 0, 0, 0),
+(3, 'securehubservices', '9537128259', 'partner@mail.com', 'V2M3TFBLVzF1ODZKaDlXVGhUeUpqUT09', 'Partner', 0, 0, '2021-12-22 12:58:14', '2021-12-22 08:27:35', 0, 0, 0, 0),
+/* (4, 'lead', '9537128259', 'lead@mail.com', 'V2M3TFBLVzF1ODZKaDlXVGhUeUpqUT09', 'User', 0, 0, '2021-12-22 12:58:14', '2021-12-27 11:02:30', 0, 0, 0, 0); */
+COMMIT;
