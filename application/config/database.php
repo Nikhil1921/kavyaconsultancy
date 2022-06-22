@@ -63,7 +63,7 @@ switch ($_SERVER['SERVER_NAME']) {
             'hostname' => 'localhost',
             'username' => 'root',
             'password' => '',
-            'database' => 'securehubservices',
+            'database' => 'kavyaconsultancy',
             'dbdriver' => 'mysqli',
             'dbprefix' => '',
             'pconnect' => (ENVIRONMENT !== 'production'),

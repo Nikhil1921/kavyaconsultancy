@@ -31,14 +31,14 @@ class Home extends Admin_controller  {
             $this->load->model('Companies_model', 'companies');
             $data['companies'] = $this->companies->count();
         endif;
-        if(verify_access('become_partners', 'view')):
+        /* if(verify_access('become_partners', 'view')):
             $this->load->model('Become_partners_model', 'partners');
             $data['partners'] = $this->partners->count();
         endif;
         if(verify_access('branches', 'view')):
             $this->load->model('Branches_model', 'branches');
             $data['branches'] = $this->branches->count();
-        endif;
+        endif; */
         if(verify_access('users', 'view')):
             $this->load->model('Users_model', 'users');
             $data['users'] = $this->users->users_count();
@@ -47,12 +47,12 @@ class Home extends Admin_controller  {
             $this->load->model('Users_model', 'leads');
             $data['leads'] = $this->leads->leads_count();
         endif;
-        if(in_array($this->user->role, ['Partner', 'Admin'])):
+        /* if(in_array($this->user->role, ['Partner', 'Admin'])):
             $this->load->model('Purchased_plans_model');
             $data['commission'] = $this->Purchased_plans_model->commission();
             $data['pending_commission'] = $this->Purchased_plans_model->commission('Pending');
             $data['paid_commission'] = $this->Purchased_plans_model->commission('Paid');
-        endif;
+        endif; */
         
         return $this->template->load('template', 'home', $data);
 	}

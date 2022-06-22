@@ -15,7 +15,8 @@ class Main_modal extends MY_Model
                     
                     default:
                         $return = [
-                            'Admin', 'Branch manager', 'Partner', 'Sales person', 'Operation', 'Accountant', 'Digital marketing'
+                            'Admin'
+                            // , 'Branch manager', 'Partner', 'Sales person', 'Operation', 'Accountant', 'Digital marketing'
                         ];
                     break;
                 }

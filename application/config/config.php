@@ -1,6 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-define('APP_NAME', 'Secure Hub Services');
-// date_default_timezone_set("Asia/Calcutta");
+define('APP_NAME', 'Kavya Consultancy');
 
 /*
 |--------------------------------------------------------------------------
